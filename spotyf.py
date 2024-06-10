@@ -2,8 +2,8 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 # Set your app credentials
-SPOTIPY_CLIENT_ID = '31dc7e12a84047aeab377417a7fbf05a'
-SPOTIPY_CLIENT_SECRET = '51f4fc49c75c4ec4aa0add23f3e05563'
+SPOTIPY_CLIENT_ID = 'your_client_ID'
+SPOTIPY_CLIENT_SECRET = 'your_client_secret'
 SPOTIPY_REDIRECT_URI = 'http://localhost:8888/callback/'
 
 # Define the scope
@@ -22,7 +22,7 @@ for item in results['items']:
     print(f"Playlist: {item['name']}, ID: {item['id']}")
 
 # Replace with your playlist ID
-playlist_id = '7isduMadThpQaFPdMr1mgA'
+playlist_id = 'your_playlist_id'
 
 # Check if the playlist is followed
 playlist = sp.playlist(playlist_id, fields="followers")
